@@ -6,7 +6,7 @@
   **Una base de datos colaborativa, pública y en abierto de recursos para personas neurodivergentes**
   
   [![Contribuciones: bienvenidas](https://img.shields.io/badge/Contribuciones-bienvenidas-brightgreen.svg)](CONTRIBUTING.md)
-  [![GitHub stars](https://img.shields.io/github/stars/tuusuario/nd-toolkit?style=social)](https://github.com/N0wtQ/ND-Toolkit/stargazers)
+  [![GitHub](https://img.shields.io/github/stars/tuusuario/nd-toolkit?style=social)](https://github.com/N0wtQ/ND-Toolkit)
   [![Web](https://img.shields.io/badge/Web-Notion-000000?logo=notion)](https://www.notion.so/ND-Toolkit-Mapa-de-recursos-neurodivergentes-312e5a13db46808fb87bc04b4eec9449)
   [![WhatsApp](https://img.shields.io/badge/WhatsApp-Canal-25D366?logo=whatsapp)](https://whatsapp.com/channel/0029Vb7weJlDZ4Le5l3tMK3F)
   
