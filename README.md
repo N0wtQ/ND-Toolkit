@@ -39,12 +39,12 @@ Todo comenzó gracias a una publicación de **Raquel Ibáñez López** ❤️, y
 | **TDAH** | Trastorno por Déficit de Atención e Hiperactividad |
 | **DIS** | Dislexia / Dispraxia |
 | **ANS** | Ansiedad |
-| **SPS** | Alta Sensibilidad (PAS) |
+| **PAS** | Alta Sensibilidad |
 | **TCE** | Daño Cerebral Adquirido / TBI |
 | **TDA** | Trastorno por Déficit de Atención |
 | **TOD** | Trastorno Oposicionista Desafiante |
 | **TOC** | Trastorno Obsesivo Compulsivo |
-| **TAL** | Altas Capacidades / Talentos Especiales |
+| **AACC** | Altas Capacidades / Talentos Especiales |
 
 ## 📋 Categorías de recursos
 
