@@ -23,7 +23,7 @@ Todo comenzó gracias a una publicación de **Raquel Ibáñez López** ❤️, y
 ## ✨ Características
 
 ✅ **M+ de 100 recursos** organizados por categoría y subcategoría  
-✅ **Filtrado por perfil ND**: TEA, TDAH, DIS, ANS, SPS, TCE, TDA, TOD, TOC, TAL  
+✅ **Filtrado por perfil ND**: TEA, TDAH, DIS, ANS, PAS, TCE, TDA, TOD, TOC, AACC  
 ✅ **Explicación desde experiencia real**: "Por qué funciona"  
 ✅ **Valoración comunitaria** ⭐  
 ✅ **Precio, plataforma y tipo** de recurso  
