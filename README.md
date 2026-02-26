@@ -16,7 +16,7 @@
 
 **ND-Toolkit** es un proyecto colaborativo que nace desde la comunidad neurodivergente para la comunidad neurodivergente. Nuestro objetivo es crear un **mapa vivo de recursos** (apps, tiendas, productos, juguetes, ropa adaptada, etc.) útiles para personas con perfiles ND.
 
-Todo comenzó gracias a una publicación de **Raquel Ibáñez López** ❤️, y hoy es una realidad gracias a las contribuciones de decenas de personas.
+🔗 Acceso directo: https://www.notion.so/ND-Toolkit-Mapa-de-recursos-neurodivergentes-312e5a13db46808fb87bc04b4eec9449
 
 > "Lo que no se nombra, no existe. Y lo que no se comparte, se pierde."
 
