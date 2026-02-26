@@ -90,10 +90,8 @@
 La versión más visual y navegable está en Notion:  
 👉 **[ND-Toolkit en Notion](https://www.notion.so/ND-Toolkit-Mapa-de-recursos-neurodivergentes-312e5a13db46808fb87bc04b4eec9449)**
 
-### Opción 2: Descargar CSV
-Puedes descargar la base de datos completa en CSV desde [`/data/recursos_completos.csv`](data/recursos_completos.csv)
 
-### Opción 3: Clonar el repositorio
+### Opción 2: Clonar el repositorio
 ```bash
 git clone https://github.com/tuusuario/nd-toolkit.git
 cd nd-toolkit
