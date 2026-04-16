@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa Lugares Tranquilos España — ND-Toolkit</title>
+  <meta name="description" content="Mapa interactivo de supermercados con hora silenciosa, espacios naturales certificados, bibliotecas con sala sensorial y otros lugares tranquilos en España. Para personas con TEA, hipersensibilidad sensorial y ansiedad.">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <span class="header-logo" aria-hidden="true">🔇</span>
+    <div class="header-title">
+      <h1>Lugares Tranquilos en España</h1>
+      <p>Supermercados con hora silenciosa · Espacios naturales · Salas sensoriales</p>
+    </div>
+    <span class="header-badge">PROTOTIPO v0.1</span>
+  </header>
+
+  <!-- App Body -->
+  <div class="app-body">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" role="complementary" aria-label="Controles del mapa">
+      <div class="sidebar-scroll">
+
+        <!-- Demo Banner -->
+        <div id="demo-banner" class="demo-banner" style="display:none;">
+          <strong>⚠️ Capa DEMO activa</strong>
+          Los puntos naranjos son ficticios y sirven para demostrar el mapa. Activa solo "Verificados" para ver datos reales.
+        </div>
+
+        <!-- Layer Toggle -->
+        <div class="layer-toggle" role="group" aria-label="Seleccionar capa de datos">
+          <button class="layer-btn all-btn active" data-layer="all" aria-pressed="true">Todo</button>
+          <button class="layer-btn demo-btn" data-layer="demo" aria-pressed="false">Demo</button>
+          <button class="layer-btn real-btn" data-layer="real" aria-pressed="false">Verificados</button>
+        </div>
+
+        <!-- Filter by Type -->
+        <div class="filter-section">
+          <div class="filter-label">Tipo de lugar</div>
+          <div class="filter-chips" role="group" aria-label="Filtrar por tipo">
+            <button class="chip active" data-tipo="supermercado" title="Supermercados con hora silenciosa">🛒 Supermercado</button>
+            <button class="chip active" data-tipo="centro_comercial" title="Centros comerciales con hora silenciosa">🏬 C. comercial</button>
+            <button class="chip active" data-tipo="espacio_natural" title="Espacios naturales certificados">🌲 Natural</button>
+            <button class="chip active" data-tipo="biblioteca" title="Bibliotecas con sala sensorial">📚 Biblioteca</button>
+            <button class="chip active" data-tipo="centro_civico" title="Centros cívicos con zona de silencio">🏛️ C. cívico</button>
+            <button class="chip active" data-tipo="hotel" title="Hoteles con política de silencio">🏨 Hotel</button>
+          </div>
+        </div>
+
+        <!-- Search -->
+        <div class="search-wrapper">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input
+            id="search-input"
+            class="search-input"
+            type="search"
+            placeholder="Buscar ciudad, nombre, cadena…"
+            aria-label="Buscar lugar"
+          >
+        </div>
+
+        <!-- Place List -->
+        <div class="places-header">
+          <span class="filter-label">Lugares</span>
+          <span id="places-count" class="places-count">—</span>
+        </div>
+        <div id="place-list" class="place-list" role="list" aria-label="Lista de lugares">
+          <div style="text-align:center;padding:24px;color:#9ca3af;font-size:13px;">Cargando…</div>
+        </div>
+
+        <!-- Suggest New Place -->
+        <button id="suggest-btn" class="suggest-btn" type="button">
+          ➕ Sugerir un nuevo lugar
+        </button>
+
+        <!-- Limitations Note -->
+        <div class="limitations-note">
+          <strong>Limitaciones conocidas:</strong> No existe base de datos centralizada oficial de hora silenciosa en España. Los datos reales provienen de fuentes públicas (webs corporativas, prensa, asociaciones). Mercadona, Lidl, Día y Alcampo <em>no tienen hora silenciosa confirmada</em> a la fecha de esta versión. Verifica siempre antes de tu visita.
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- Map -->
+    <main id="map" aria-label="Mapa interactivo de lugares tranquilos en España"></main>
+
+  </div>
+
+  <!-- Suggest Modal -->
+  <div id="suggest-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 id="modal-title">Sugerir un lugar</h2>
+        <button id="modal-close" class="modal-close" aria-label="Cerrar">×</button>
+      </div>
+      <div class="modal-body">
+        <form id="suggest-form" novalidate>
+
+          <div class="form-group">
+            <label class="form-label" for="sug-nombre">Nombre del lugar <span class="required">*</span></label>
+            <input id="sug-nombre" name="nombre" class="form-input" type="text" required
+                   placeholder="Ej: Carrefour Market Ruzafa" maxlength="200">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sug-tipo">Tipo <span class="required">*</span></label>
+            <select id="sug-tipo" name="tipo" class="form-select" required>
+              <option value="">— Selecciona —</option>
+              <option value="supermercado_hora_silenciosa">Supermercado con hora silenciosa</option>
+              <option value="centro_comercial_hora_silenciosa">Centro comercial con hora silenciosa</option>
+              <option value="espacio_natural_certificado">Espacio natural tranquilo</option>
+              <option value="biblioteca_sala_sensorial">Biblioteca / sala sensorial</option>
+              <option value="centro_civico_zona_silencio">Centro cívico / sala de silencio</option>
+              <option value="hotel_politica_silencio">Hotel con política de silencio</option>
+              <option value="sala_estudio_accesible">Sala de estudio accesible</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sug-direccion">Dirección completa <span class="required">*</span></label>
+            <input id="sug-direccion" name="direccion" class="form-input" type="text" required
+                   placeholder="Calle, número, CP, ciudad">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="sug-hora-inicio">Hora inicio silencio</label>
+              <input id="sug-hora-inicio" name="hora_inicio" class="form-input" type="time">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="sug-hora-fin">Hora fin</label>
+              <input id="sug-hora-fin" name="hora_fin" class="form-input" type="time">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sug-dias">Días de la semana</label>
+            <input id="sug-dias" name="dias" class="form-input" type="text"
+                   placeholder="Ej: Lunes a Domingo · Solo sábados">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sug-fuente">URL de la fuente <span class="required">*</span></label>
+            <input id="sug-fuente" name="fuente_url" class="form-input" type="url" required
+                   placeholder="https://...">
+            <div class="form-hint">Imprescindible: enlace a la web oficial, noticia de prensa o PDF que confirme este lugar.</div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sug-notas">Notas adicionales</label>
+            <textarea id="sug-notas" name="notas" class="form-textarea"
+                      placeholder="Información adicional, condiciones especiales, acceso…"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sug-email">Tu email (opcional)</label>
+            <input id="sug-email" name="email" class="form-input" type="email"
+                   placeholder="Para informarte si añadimos el lugar">
+          </div>
+
+          <button type="submit" class="form-submit">Enviar sugerencia</button>
+          <p class="form-disclaimer">
+            Todas las sugerencias se verifican antes de aparecer en el mapa.
+            Solo incluimos lugares con fuente confirmable. Tu email no se comparte con terceros.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN2GqT4=" crossorigin=""></script>
+
+  <!-- App JS -->
+  <script src="./js/map.js"></script>
+
+</body>
+</html>
