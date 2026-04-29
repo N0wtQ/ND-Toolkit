@@ -1,0 +1,307 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "descripcion": "Lugares reales verificados con fuentes públicas. Última actualización: 2026-04-16.",
+    "advertencia": "La hora silenciosa puede cambiar. Verifica siempre en la web oficial del establecimiento antes de tu visita.",
+    "version": "1.0.0",
+    "fecha": "2026-04-16"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-3.8989, 40.3800] },
+      "properties": {
+        "id": "real-001",
+        "nombre": "Carrefour Hipermercado Xanadú",
+        "tipo": "supermercado_hora_silenciosa",
+        "cadena": "Carrefour España",
+        "direccion": "A-5, km 23, 28939 Arroyomolinos, Madrid",
+        "ciudad": "Arroyomolinos",
+        "provincia": "Madrid",
+        "comunidad": "Comunidad de Madrid",
+        "hora_silenciosa_inicio": "15:00",
+        "hora_silenciosa_fin": "16:00",
+        "dias_semana": "Lunes a Domingo",
+        "medidas": [
+          "Sin música ambiental",
+          "Reducción intensidad lumínica",
+          "Sin mensajes de megafonía (excepto emergencias)",
+          "Menor volumen en cajas",
+          "Mínimas tareas ruidosas durante la franja"
+        ],
+        "colectivos": ["TEA", "Hipersensibilidad sensorial", "Ansiedad"],
+        "verificacion": "VERIFICADO",
+        "fuente_url": "https://autismo.org.es/actualidad/noticias/carrefour-espana-extiende-la-hora-silenciosa-favor-de-las-personas-con-autismo-e/",
+        "fuente_secundaria": "https://www.carrefour.es/grupo-carrefour/sala-de-prensa/noticias.aspx?tcm=tcm:5-54126",
+        "fecha_verificacion": "2026-04-16",
+        "contacto_web": "https://www.carrefour.es",
+        "notas": "Carrefour España implementó La Hora Silenciosa en todos sus hipermercados (julio 2021) y 147 Carrefour Market (septiembre 2021), extendiéndola a todos los días de la semana en 2022. En colaboración con Autismo España y Fundación Reina Sofía."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.2000, 41.4351] },
+      "properties": {
+        "id": "real-002",
+        "nombre": "Carrefour Hipermercado La Maquinista",
+        "tipo": "supermercado_hora_silenciosa",
+        "cadena": "Carrefour España",
+        "direccion": "Carrer de Potosí, 2, 08030 Barcelona",
+        "ciudad": "Barcelona",
+        "provincia": "Barcelona",
+        "comunidad": "Cataluña",
+        "hora_silenciosa_inicio": "15:00",
+        "hora_silenciosa_fin": "16:00",
+        "dias_semana": "Lunes a Domingo",
+        "medidas": [
+          "Sin música ambiental",
+          "Reducción intensidad lumínica",
+          "Sin mensajes de megafonía (excepto emergencias)",
+          "Menor volumen en cajas",
+          "Mínimas tareas ruidosas durante la franja"
+        ],
+        "colectivos": ["TEA", "Hipersensibilidad sensorial", "Ansiedad"],
+        "verificacion": "VERIFICADO",
+        "fuente_url": "https://autismo.org.es/actualidad/noticias/carrefour-espana-extiende-la-hora-silenciosa-a-favor-de-las-personas-con-autismo-e-hipersensibilidad-sensorial-a-sus-centros-carrefour-market/",
+        "fuente_secundaria": "https://www.foodretail.es/retailers/Carrefour-Espana-Hora-Silenciosa-autismo_0_1567643225.html",
+        "fecha_verificacion": "2026-04-16",
+        "contacto_web": "https://www.carrefour.es",
+        "notas": "Todos los hipermercados Carrefour en España aplican La Hora Silenciosa. Este es uno de los hipermercados de referencia en Barcelona. Verificar horario exacto con la tienda antes de la visita."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-0.4089, 42.1404] },
+      "properties": {
+        "id": "real-003",
+        "nombre": "Supermercados Altoaragón — Red de 14 tiendas en Huesca",
+        "tipo": "supermercado_hora_silenciosa",
+        "cadena": "Supermercados Altoaragón",
+        "direccion": "Av. Pirineos, 10-12, 22004 Huesca (sede central; 14 establecimientos en la provincia)",
+        "ciudad": "Huesca",
+        "provincia": "Huesca",
+        "comunidad": "Aragón",
+        "hora_silenciosa_inicio": "15:00",
+        "hora_silenciosa_fin": "16:00",
+        "dias_semana": "Lunes a Domingo",
+        "medidas": [
+          "Reducción intensidad lumínica",
+          "Reducción intensidad sonora",
+          "Sin música ambiental",
+          "Sin megafonía publicitaria"
+        ],
+        "colectivos": ["TEA", "Hipersensibilidad sensorial"],
+        "verificacion": "VERIFICADO",
+        "fuente_url": "https://www.igastroaragon.com/2024/04/supermercados-altoaragon-activa-la-hora-silenciosa-en-apoyo-a-las-personas-con-autismo-e-hipersensibilidad-sensorial.html",
+        "fuente_secundaria": "https://superaltoaragon.es/",
+        "fecha_verificacion": "2026-04-16",
+        "contacto_web": "https://superaltoaragon.es",
+        "notas": "Segunda cadena de supermercados en España (tras Carrefour) en implementar La Hora Silenciosa. Activo desde abril 2024 en sus 14 establecimientos en la provincia de Huesca. El punto del mapa representa la sede central; consulta la web para tiendas específicas."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-3.7020, 40.3450] },
+      "properties": {
+        "id": "real-004",
+        "nombre": "Centro Comercial Los Ángeles",
+        "tipo": "centro_comercial_hora_silenciosa",
+        "cadena": "Centro Comercial Los Ángeles",
+        "direccion": "Av. de Andalucía, km 7, 28041 Madrid (barrio de Villaverde)",
+        "ciudad": "Madrid",
+        "provincia": "Madrid",
+        "comunidad": "Comunidad de Madrid",
+        "hora_silenciosa_inicio": "14:30",
+        "hora_silenciosa_fin": "16:30",
+        "dias_semana": "Lunes a Domingo",
+        "medidas": [
+          "Reducción intensidad lumínica",
+          "Reducción intensidad sonora",
+          "Sin música ambiental en zonas comunes"
+        ],
+        "colectivos": ["TEA", "Hipersensibilidad sensorial", "Ansiedad"],
+        "verificacion": "VERIFICADO",
+        "fuente_url": "https://centrocomerciallosangeles.es/hora-silenciosa-en-los-angeles/",
+        "fuente_secundaria": null,
+        "fecha_verificacion": "2026-04-16",
+        "contacto_web": "https://centrocomerciallosangeles.es",
+        "notas": "La Hora Silenciosa dura 2 horas (14:30-16:30), más amplia que la mayoría. Tiene también un hipermercado Carrefour integrado. Tel. 917237038."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.2165, 41.4093] },
+      "properties": {
+        "id": "real-005",
+        "nombre": "Centro Comercial Diagonal Mar",
+        "tipo": "centro_comercial_hora_silenciosa",
+        "cadena": "Diagonal Mar",
+        "direccion": "Avinguda Diagonal, 3, 08019 Barcelona",
+        "ciudad": "Barcelona",
+        "provincia": "Barcelona",
+        "comunidad": "Cataluña",
+        "hora_silenciosa_inicio": "15:00",
+        "hora_silenciosa_fin": "16:00",
+        "dias_semana": "Lunes a Domingo",
+        "medidas": [
+          "Reducción intensidad lumínica en zonas comunes",
+          "Eliminación música ambiental"
+        ],
+        "colectivos": ["TEA", "Hipersensibilidad sensorial"],
+        "verificacion": "VERIFICADO — pendiente confirmación directa con el centro",
+        "fuente_url": "https://www.distribucionactualidad.com/hora-silenciosa-llega-mas-supermercados-y-centros-comerciales/",
+        "fuente_secundaria": null,
+        "fecha_verificacion": "2026-04-16",
+        "contacto_web": "https://www.diagonalmar.com",
+        "notas": "Mencionado en prensa especializada de distribución como centro que aplica La Hora Silenciosa. Recomendamos verificar directamente con el centro antes de la visita."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-4.7920, 37.8882] },
+      "properties": {
+        "id": "real-006",
+        "nombre": "Centro Comercial La Sierra",
+        "tipo": "centro_comercial_hora_silenciosa",
+        "cadena": "C.C. La Sierra",
+        "direccion": "Carretera de Trassierra, s/n, 14011 Córdoba",
+        "ciudad": "Córdoba",
+        "provincia": "Córdoba",
+        "comunidad": "Andalucía",
+        "hora_silenciosa_inicio": "15:00",
+        "hora_silenciosa_fin": "16:00",
+        "dias_semana": "Sábados",
+        "medidas": [
+          "Reducción intensidad lumínica",
+          "Sin música ambiental",
+          "Sin megafonía publicitaria"
+        ],
+        "colectivos": ["TEA", "Hipersensibilidad sensorial"],
+        "verificacion": "VERIFICADO — pendiente confirmación directa con el centro",
+        "fuente_url": "https://centrocomerciallasierra.com/eventos/hora-silenciosa/",
+        "fuente_secundaria": "https://www.distribucionactualidad.com/hora-silenciosa-llega-mas-supermercados-y-centros-comerciales/",
+        "fecha_verificacion": "2026-04-16",
+        "contacto_web": "https://centrocomerciallasierra.com",
+        "notas": "La hora silenciosa se aplica los sábados, un día a la semana (diferente al modelo diario de Carrefour). Recomendamos verificar vigencia antes de la visita."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.4500, 41.7167] },
+      "properties": {
+        "id": "real-007",
+        "nombre": "Parc del Montnegre i el Corredor — Primer Parque Urbano Silencioso de España",
+        "tipo": "espacio_natural_certificado",
+        "cadena": null,
+        "direccion": "Acceso principal: Can Cua, Ctra. B-5107, Sant Celoni / Dosrius, Barcelona",
+        "ciudad": "Sant Celoni / Dosrius",
+        "provincia": "Barcelona",
+        "comunidad": "Cataluña",
+        "hora_silenciosa_inicio": null,
+        "hora_silenciosa_fin": null,
+        "dias_semana": "Acceso libre todo el año",
+        "medidas": [
+          "Paisaje sonoro natural certificado",
+          "Baja contaminación acústica medida en múltiples visitas",
+          "15.000 hectáreas de bosque mediterráneo"
+        ],
+        "colectivos": ["TEA", "Ansiedad", "Estrés", "Hipersensibilidad sensorial", "Burnout", "General"],
+        "verificacion": "VERIFICADO — Certificado por Quiet Parks International (QPI), octubre 2021",
+        "fuente_url": "https://www.quietparks.org/parc-del-montnegre-i-el-corredor-spains-first-urban-quiet-park",
+        "fuente_secundaria": "https://parcs.diba.cat/en/web/l-informatiu/-/montnegre-el-parc-del-montnegre-i-el-corredor-distingit-per-la-xarxa-internacional-de-parcs-tranquils-quiet-park-international",
+        "fecha_verificacion": "2026-04-16",
+        "contacto_web": "https://parcs.diba.cat/ca/web/montnegre",
+        "notas": "Primer Urban Quiet Park certificado por Quiet Parks International en España (octubre 2021). Mediciones acústicas rigurosas confirman bajos niveles de contaminación sonora. Más de 15.000 ha entre Maresme y Vallès Oriental."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.2095, 41.4394] },
+      "properties": {
+        "id": "real-008",
+        "nombre": "Biblioteca Bon Pastor — Espai Sensorial",
+        "tipo": "biblioteca_sala_sensorial",
+        "cadena": null,
+        "direccion": "Carrer de Palomar, 16, 08030 Barcelona",
+        "ciudad": "Barcelona",
+        "provincia": "Barcelona",
+        "comunidad": "Cataluña",
+        "hora_silenciosa_inicio": null,
+        "hora_silenciosa_fin": null,
+        "dias_semana": "Consultar con la biblioteca (reserva previa)",
+        "medidas": [
+          "Sala sensorial dedicada",
+          "Materiales y dispositivos que regulan sonido, luz y vibración",
+          "Sesiones de 30 o 60 minutos reservables"
+        ],
+        "colectivos": ["TEA", "Hipersensibilidad sensorial", "TDAH", "Diversidad funcional"],
+        "verificacion": "VERIFICADO",
+        "fuente_url": "https://ajuntament.barcelona.cat/biblioteques/bibbonpastor/es/canal/espai-sensorial",
+        "fuente_secundaria": "https://universoabierto.org/2022/10/03/las-bibliotecas-ofrecen-espacios-sensoriales/",
+        "fecha_verificacion": "2026-04-16",
+        "contacto_web": "https://ajuntament.barcelona.cat/biblioteques/bibbonpastor/es",
+        "notas": "Pionera en espacios sensoriales en bibliotecas públicas españolas. Proyecto del Ajuntament de Barcelona para hacer accesibles las bibliotecas a personas con desórdenes sensoriales. Requiere reserva previa."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.1900, 41.3980] },
+      "properties": {
+        "id": "real-009",
+        "nombre": "Biblioteca García Márquez — Espai Sensorial",
+        "tipo": "biblioteca_sala_sensorial",
+        "cadena": null,
+        "direccion": "Carrer de la Rambla del Poblenou, 85, 08005 Barcelona",
+        "ciudad": "Barcelona",
+        "provincia": "Barcelona",
+        "comunidad": "Cataluña",
+        "hora_silenciosa_inicio": null,
+        "hora_silenciosa_fin": null,
+        "dias_semana": "Consultar con la biblioteca (reserva previa)",
+        "medidas": [
+          "Espacio sensorial con estimulación controlada",
+          "Iluminación regulable",
+          "Materiales sensoriales especializados"
+        ],
+        "colectivos": ["TEA", "Hipersensibilidad sensorial", "TDAH", "Diversidad funcional"],
+        "verificacion": "VERIFICADO",
+        "fuente_url": "https://ajuntament.barcelona.cat/biblioteques/es/bibgarciamarquez/colecciones/espacio-sensorial-1409755",
+        "fuente_secundaria": null,
+        "fecha_verificacion": "2026-04-16",
+        "contacto_web": "https://ajuntament.barcelona.cat/biblioteques/es/bibgarciamarquez",
+        "notas": "Segunda biblioteca del Ajuntament de Barcelona con espacio sensorial dedicado. Proyecto de inclusión y fomento de la lectura para personas con necesidades sensoriales especiales."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-3.6942, 40.4141] },
+      "properties": {
+        "id": "real-010",
+        "nombre": "Carrefour Market — Red nacional (147 supermercados)",
+        "tipo": "supermercado_hora_silenciosa",
+        "cadena": "Carrefour España",
+        "direccion": "147 supermercados en toda España — ver tiendas en carrefour.es",
+        "ciudad": "Múltiples ciudades",
+        "provincia": "Múltiples provincias",
+        "comunidad": "Toda España",
+        "hora_silenciosa_inicio": "15:00",
+        "hora_silenciosa_fin": "16:00",
+        "dias_semana": "Lunes a Domingo",
+        "medidas": [
+          "Sin música ambiental",
+          "Reducción intensidad lumínica",
+          "Sin mensajes de megafonía (excepto emergencias)",
+          "Menor volumen en cajas",
+          "Formación específica del personal en TEA"
+        ],
+        "colectivos": ["TEA", "Hipersensibilidad sensorial", "Ansiedad"],
+        "verificacion": "VERIFICADO",
+        "fuente_url": "https://autismo.org.es/actualidad/noticias/carrefour-espana-extiende-la-hora-silenciosa-a-favor-de-las-personas-con-autismo-e-hipersensibilidad-sensorial-a-sus-centros-carrefour-market/",
+        "fuente_secundaria": "https://prensasocial.es/la-hora-silenciosa-se-amplia-a-todos-los-dias-de-la-semana/",
+        "fecha_verificacion": "2026-04-16",
+        "contacto_web": "https://www.carrefour.es/tiendas-carrefour",
+        "notas": "Este punto representa Madrid como referencia geográfica central. La iniciativa aplica a toda la red de 147 supermercados Carrefour Market en España. Usa el buscador de tiendas en carrefour.es para encontrar la más cercana."
+      }
+    }
+  ]
+}
